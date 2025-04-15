@@ -6,7 +6,6 @@ import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
-import { Form } from "react-router-dom";
 
 import "./sign-up-form.styles.scss";
 
@@ -21,9 +20,9 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  const resetFormFields = () => {
-    setFormFields(defaultFormFields);
-  };
+  // const resetFormFields = () => {
+  //   setFormFields(defaultFormFields);
+  // };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
